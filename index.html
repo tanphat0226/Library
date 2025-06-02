@@ -7,8 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Library</h1>
+    <header class="header">
+        <h1>Library</h1>
+        <button id="openBtn" class="btn btn--primary">New Book</button>
+    </header>
+    
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Status</th>
+        </tr>
+        <tbody id="table-body">
 
+        </tbody>
+    </table>
+
+    
+    <dialog id="myDialog">
+        <h2>Add new book</h2>
+        <form id="add-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" placeholder="Enter author">
+            </div>
+               <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" name="genre" id="genre" placeholder="Enter genre">
+            </div>
+               <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" name="status" id="status" value="Unread" >
+            </div>
+            
+
+           <div class="form-action">
+                <button type="submit" class="btn btn--primary">Add</button>
+                <button type="reset" id="closeBtn" class="btn">Close</button>
+           </div>
+        </form>
+        
+    </dialog>
     <script src="script.js"></script>
 </body>
 </html>
